@@ -68,7 +68,7 @@ General Use
 | git branch | Lists branches for you |
 | git branch "branch name" | Makes new branch |
 | git checkout "branch name" | Switch to branch |
-| git checkout -b "branch name" | Same as 2 prev commands together |
+| git checkout -b "branch name" | Same as 2 previous commands together |
 | git add . | Finds all changed files |
 | git commit -m "Testing123" | Commit with message |
 | git push origin "branch" | Push to branch |
