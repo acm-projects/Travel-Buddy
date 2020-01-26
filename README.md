@@ -38,22 +38,22 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 
 ### Common Github Commands
 Login:
-> git config --global user.name "username" [lb]
-> git config --global user.email "email"
+> git config --global user.name "username" <br/>
+> git config --global user.email "email" <br/>
 > git config user.name ((checks that you're in, in case you’re unsure))
 
 First Time Setup:
 > git clone ((never do this again unless you blew up your computer))
 
 General Use
-> cd "encryption-evolution" ((change directories over to our repository))
-> git branch ((lists branches for you))
-> git branch "branch name" ((makes new branch))
-> git checkout "branch name" ((switch to branch))
-> 	git checkout -b "branch name" ((same as 2 prev commands together))
-> git add . ((finds all changed files))
-> git commit -m "Testing123" ((commit message))
-> git push origin "branch" ((push to branch))
-> git pull origin "branch" ((pull updates from a specific branch))
+> cd "encryption-evolution" ((change directories over to our repository)) <br/>
+> git branch ((lists branches for you)) <br/>
+> git branch "branch name" ((makes new branch)) <br/>
+> git checkout "branch name" ((switch to branch)) <br/>
+> 	git checkout -b "branch name" ((same as 2 prev commands together)) <br/>
+> git add . ((finds all changed files)) <br/>
+> git commit -m "Testing123" ((commit message)) <br/>
+> git push origin "branch" ((push to branch)) <br/>
+> git pull origin "branch" ((pull updates from a specific branch)) <br/>
 
 
