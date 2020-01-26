@@ -38,6 +38,7 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 
 ### Common Github Commands
 Login:
+
 | Command | Description |
 | ------ | ------ |
 | git config --global user.name "username" |  |
@@ -45,11 +46,13 @@ Login:
 | git config user.name | Checks that you're in, in case you’re unsure |
 
 First Time Setup:
+
 | Command | Description |
 | ------ | ------ |
 | git clone | Creates local copy of remote repo. Try to not do this again unless you blew up your computer |
 
 General Use
+
 | Command | Description |
 | ------ | ------ |
 | cd "encryption-evolution" | Change directories over to our repository |
