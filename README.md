@@ -17,21 +17,24 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 - Pop up notifications before events
 - Recommends restaurants and big landmarks to visit nearby
   - Even better if the recommendations can be refined to either the interests of the user or a search bar / tags
-- Given a list of places the user is interested in visiting or are already in their schedule, the app will try to plan out a day’s itinerary (taking into account closing times and travel times)
+- Given a list of places that the user is interested in visiting or are already in their schedule, the app will try to plan out a day’s itinerary (taking into account closing times and travel times)
 - Currency converter
 - Connect to available ride share apps
 
 ## Resources
 - [Git Bash for Windows](https://gitforwindows.org)
 - [Flutter](https://flutter.dev/)
-  - Google's UI framework, comprehensive app Software Development Kit (SDK) complete with widgets and tools 
+  - Google's UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.
   - Uses [Dart](https://dart.dev/) language
+    - [Rundown of Dart](https://dart.dev/guides/language/language-tour)
   - Setup:
     - [Official Flutter Setup Instructions](https://flutter.dev/docs/get-started/install)
     - [Install and Setup Video](https://www.youtube.com/watch?v=1ukSR1GRtMU)
 - Any text editor can be used eg. [VS Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio)
+  - Personally I prefer Android Studio. VS Code might be lighter and cleaner, but Android Studio has never let me down, would be valuable to learn for future projects / career, and most tutorials out there will explain using Android Studio as the default.
 - [Firebase](https://firebase.google.com/)
   - Database to store user info (accounts, lists, schedule, etc)
+  - [Adding Firebase to Your Android Project](https://firebase.google.com/docs/android/setup)
   - [Flutter and Firebase Tutorial](https://www.youtube.com/watch?v=sfA3NWDBPZ4&list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
 - [Google Places API](https://developers.google.com/places/web-service/intro)
   - API for auto filling location info and places nearby
@@ -70,5 +73,3 @@ General Use
 | git commit -m "Testing123" | Commit with message |
 | git push origin "branch" | Push to branch |
 | git pull origin "branch" | Pull updates from a specific branch |
-
-
