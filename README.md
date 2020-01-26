@@ -38,7 +38,7 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 
 ### Common Github Commands
 Login:
-> git config --global user.name "username" \n
+> git config --global user.name "username" [lb]
 > git config --global user.email "email"
 > git config user.name ((checks that you're in, in case you’re unsure))
 
