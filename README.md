@@ -21,7 +21,6 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 - Currency converter
 - Connect to available ride share apps
 
-
 ## Resources
 - [Git Bash for Windows](https://gitforwindows.org)
 - [Flutter](https://flutter.dev/)
@@ -36,4 +35,25 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 ### Suggestions
 - [Flutter vs. React Native](https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2020)
   - If you want, you can choose to use React Native. Flutter has some troubles with Firebase, but it's very good with UI, loads quickly for people on the go, and I like Google better than Facebook.
+
+### Common Github Commands
+Login:
+> git config --global user.name "username"
+> git config --global user.email "email"
+> git config user.name ((checks that you're in, in case you’re unsure))
+
+First Time Setup:
+> git clone ((never do this again unless you blew up your computer))
+
+General Use
+> cd "encryption-evolution" ((change directories over to our repository))
+> git branch ((lists branches for you))
+> git branch "branch name" ((makes new branch))
+> git checkout "branch name" ((switch to branch))
+> 	git checkout -b "branch name" ((same as 2 prev commands together))
+> git add . ((finds all changed files))
+> git commit -m "Testing123" ((commit message))
+> git push origin "branch" ((push to branch))
+> git pull origin "branch" ((pull updates from a specific branch))
+
 
