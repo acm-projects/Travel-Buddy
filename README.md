@@ -26,17 +26,23 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 - [Flutter](https://flutter.dev/)
   - Google's UI framework, comprehensive app Software Development Kit (SDK) complete with widgets and tools 
   - Uses [Dart](https://dart.dev/) language
+  - Setup:
+    - [Official Flutter Setup Instructions](https://flutter.dev/docs/get-started/install)
+    - [Install and Setup Video](https://www.youtube.com/watch?v=1ukSR1GRtMU)
 - Any text editor can be used eg. [VS Code](https://code.visualstudio.com/) or [Android Studio](https://developer.android.com/studio)
 - [Firebase](https://firebase.google.com/)
   - Database to store user info (accounts, lists, schedule, etc)
+  - [Flutter and Firebase Tutorial](https://www.youtube.com/watch?v=sfA3NWDBPZ4&list=PL4cUxeGkcC9j--TKIdkb3ISfRbJeJYQwC)
 - [Google Places API](https://developers.google.com/places/web-service/intro)
   - API for auto filling location info and places nearby
 
 ### Suggestions
 - [Flutter vs. React Native](https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2020)
-  - If you want, you can choose to use React Native. Flutter has some troubles with Firebase, but it's very good with UI, loads quickly for people on the go, and I like Google better than Facebook.
+  - If you want, you can choose to use React Native. Flutter has some troubles with Firebase, but it's very good with UI, loads quickly for people on the go, and is made by Google vs Facebook.
 
-### Common Github Commands
+### Common GitHub Commands
+[GitHub Cheatsheet PDF](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
+
 Login:
 
 | Command | Description |
