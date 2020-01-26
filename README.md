@@ -41,7 +41,7 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 
 ### Suggestions
 - [Flutter vs. React Native](https://www.thedroidsonroids.com/blog/flutter-vs-react-native-what-to-choose-in-2020)
-  - If you want, you can choose to use React Native. Flutter has some troubles with Firebase, but it's very good with UI, loads quickly for people on the go, and is made by Google vs Facebook.
+  - If you want, you can choose to use React Native. Flutter has some troubles with Firebase, but it's very good with UI, loads quickly for people on the go, and is made by Google vs Facebook (same as Firebase and the Maps API).
 
 ### Common GitHub Commands
 [GitHub Cheatsheet PDF](https://www.atlassian.com/dam/jcr:8132028b-024f-4b6b-953e-e68fcce0c5fa/atlassian-git-cheatsheet.pdf)
