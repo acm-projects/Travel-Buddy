@@ -73,3 +73,8 @@ General Use
 | git commit -m "Testing123" | Commit with message |
 | git push origin "branch" | Push to branch |
 | git pull origin "branch" | Pull updates from a specific branch |
+
+## Inspirations
+Not the goal, just a jumping off point C:
+[TripIt](https://www.tripit.com/web)
+[PackPoint](https://www.packpnt.com/)
