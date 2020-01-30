@@ -75,6 +75,6 @@ General Use
 | git pull origin "branch" | Pull updates from a specific branch |
 
 ## Inspirations
-Not the goal, just a jumping off point C:   </br>
-[TripIt](https://www.tripit.com/web) </br>
-[PackPoint](https://www.packpnt.com/) 
+Not the goal, just a jumping off point c:
+- [TripIt](https://www.tripit.com/web) 
+- [PackPoint](https://www.packpnt.com/) 
