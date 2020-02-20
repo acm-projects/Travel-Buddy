@@ -3,6 +3,7 @@ Mobile app designed to be your own personal travel assistant to help with smart 
 
 ## MVP
 - A simple app with multiple pages including at minimum:
+  - User login and authentication
   - Packing List
     - Comes preloaded with a master packing list that is customizable (can add, remove, and change items)
   - Itinerary
@@ -13,7 +14,6 @@ Mobile app designed to be your own personal travel assistant to help with smart 
     - Calculates travel time between places
 
 ## Stretch Goals
-- User login and authentication
 - Pop up notifications before events
 - Recommends restaurants and big landmarks to visit nearby
   - Even better if the recommendations can be refined to either the interests of the user or a search bar / tags
