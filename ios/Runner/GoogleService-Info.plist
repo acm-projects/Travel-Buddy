@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>686659813089-ef4n3odgnq8e3klppdt77u30o3j8hc3o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.686659813089-ef4n3odgnq8e3klppdt77u30o3j8hc3o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAVvdKOpAwoXbMe5DQeFs-ZpaRi0KU9P7I</string>
+	<key>GCM_SENDER_ID</key>
+	<string>686659813089</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.sreya.travelbuddyapp</string>
+	<key>PROJECT_ID</key>
+	<string>travel-buddy-91af1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>travel-buddy-91af1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:686659813089:ios:4525debfed2b704399c1a0</string>
+	<key>DATABASE_URL</key>
+	<string>https://travel-buddy-91af1.firebaseio.com</string>
+</dict>
+</plist>

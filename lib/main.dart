@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'authen.dart';
 
 void main() => runApp(TravelBuddyApp());
 
@@ -16,11 +17,16 @@ class TravelBuddyApp extends StatelessWidget {
 }
 
 class LoginPage extends StatefulWidget{
+  BaseAuth auth = new FirebaseAuthenticator();
+
   @override
   _LoginPageState createState() => _LoginPageState();
 }
 
 class _LoginPageState extends State<LoginPage>{
+  String _password;
+  String _email;
+
   @override
   Widget build(BuildContext context){
     return Scaffold(
@@ -52,9 +58,13 @@ class _LoginPageState extends State<LoginPage>{
               ),
             ),
             SizedBox(height: 40.0,),
-            buildTextField("Email"),
+            buildTextField("Email", (email) {
+              _email = email;
+            }),
             SizedBox(height: 20.0,),
-            buildTextField("Password"),
+            buildTextField("Password", (password) {
+              _password = password;
+            }),
             SizedBox(height: 20.0,),
             Container(
               child: Row(
@@ -90,7 +100,7 @@ class _LoginPageState extends State<LoginPage>{
     );
   }
 
-  Widget buildTextField(String hintText){
+  Widget buildTextField(String hintText, ValueChanged<String> changeMethod){
     return TextField(
       decoration: InputDecoration(
         hintText: hintText,
@@ -107,33 +117,40 @@ class _LoginPageState extends State<LoginPage>{
           icon: Icon(Icons.visibility_off),
         ): Container()
       ),
+      onChanged: changeMethod
     );
   }
 
   Widget buildButtonContainer(){
-    return Container(
-      height: 56.0,
-      width: MediaQuery.of(context).size.width,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(23.0),
-        gradient: LinearGradient(
-          colors: [
-            Color(0xB3FFFFFF),
-            Color(0xFF90CAF9)
-          ],
-          begin: Alignment.centerRight,
-          end: Alignment.centerLeft
-        ),
-      ),
-      child: Center(
-        child: Text(
-          "LOGIN",
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18.0,
+    return InkWell(
+      onTap: () {
+        widget.auth.signIn(_email, _password);
+      },
+      child: Container(
+        height: 56.0,
+        width: MediaQuery.of(context).size.width,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(23.0),
+          gradient: LinearGradient(
+            colors: [
+              Color(0xB3FFFFFF),
+              Color(0xFF90CAF9)
+            ],
+            begin: Alignment.centerRight,
+            end: Alignment.centerLeft
           ),
-        )
-      ),
+        ),
+        child: Center(
+          child: Text(
+            "LOGIN",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 18.0,
+            ),
+          )
+        ),
+      )
     );
   }
 }
+
