@@ -31,31 +31,17 @@ class _LoginPageState extends State<LoginPage>{
             fit: BoxFit.cover,
           ),
         ),
-        padding: EdgeInsets.only(top: 100, right: 20.0, left: 20.0, bottom: 20.0),
+        padding: EdgeInsets.only(top: 175, right: 50.0, left: 50.0, bottom: 40.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Text(
-                'Logo',
-              style: TextStyle(
-                fontSize: 50.0,
-                fontWeight: FontWeight.bold,
-              )
-            ),
+            Image.asset('images/tblogo.png'),
             SizedBox(height: 40.0,),
-            Text(
-              "LOGIN",
-              style: TextStyle(
-                fontSize: 32.0,
-                fontWeight: FontWeight.bold,
-                color: Theme.of(context).primaryColor
-              ),
-            ),
             SizedBox(height: 40.0,),
             buildTextField("Email"),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 5.0,),
             buildTextField("Password"),
-            SizedBox(height: 20.0,),
+            SizedBox(height: 10.0,),
             Container(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -63,13 +49,13 @@ class _LoginPageState extends State<LoginPage>{
                   Text(
                     "Forgotten Password?",
                     style: TextStyle(
-                      color: Theme.of(context).primaryColor,
+                      color: Colors.black,
                     ),
                   ),
                 ]
               ),
             ),
-            SizedBox(height: 50.0),
+            SizedBox(height: 20.0),
             buildButtonContainer(),
             SizedBox(height: 10.0,),
             Container(
@@ -77,9 +63,9 @@ class _LoginPageState extends State<LoginPage>{
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("Don't have an account?"),
+                    Text("Don't have an account?", style: TextStyle(color: Colors.black,)),
                     SizedBox(width: 10.0,),
-                    Text("SIGN UP", style: TextStyle(color: Theme.of(context).primaryColor,))
+                    Text("SIGN UP", style: TextStyle(color: Colors.black,))
                   ],
                 ),
               ),
@@ -96,10 +82,10 @@ class _LoginPageState extends State<LoginPage>{
         hintText: hintText,
         hintStyle: TextStyle(
           color: Colors.grey,
-          fontSize: 16.0,
+          fontSize: 14.0,
         ),
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(20.0),
+          borderRadius: BorderRadius.circular(10.0),
         ),
         prefixIcon: hintText == "Email" ? Icon(Icons.email): Icon(Icons.lock),
         suffixIcon: hintText == "Password" ? IconButton(
@@ -112,14 +98,14 @@ class _LoginPageState extends State<LoginPage>{
 
   Widget buildButtonContainer(){
     return Container(
-      height: 56.0,
+      height: 30.0,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(23.0),
+        borderRadius: BorderRadius.circular(10.0),
         gradient: LinearGradient(
           colors: [
-            Color(0xB3FFFFFF),
-            Color(0xFF90CAF9)
+            Color(0xFF0288D1),
+            Color(0xFF01579B)
           ],
           begin: Alignment.centerRight,
           end: Alignment.centerLeft
@@ -130,7 +116,7 @@ class _LoginPageState extends State<LoginPage>{
           "LOGIN",
           style: TextStyle(
             color: Colors.white,
-            fontSize: 18.0,
+            fontSize: 14.0,
           ),
         )
       ),
