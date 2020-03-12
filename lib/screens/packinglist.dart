@@ -138,6 +138,7 @@ class MyAppState extends State<Packing> {
         color: Colors.blueGrey[800],
         iconSize: 55.0,
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endDocked,
     );
   }
 }
