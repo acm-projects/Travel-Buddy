@@ -115,8 +115,8 @@ class MyAppState extends State<Packing> {
                 ),
                 activeColor: Colors.blueGrey[800],
                 value: _isChecked,
-                onChanged: (bool value) {
-                  onChanged(value);
+                onChanged: (bool value1) {
+                  onChanged(value1);
                 }),
             new CheckboxListTile(
                 title: new Text(
