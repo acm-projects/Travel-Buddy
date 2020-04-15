@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:travelbuddyapp/screens/home_page.dart';
+//import 'package:travelbuddyapp/screens/home_page.dart';
+import 'package:travelbuddyapp/screens/packinglist.dart';
 import 'package:travelbuddyapp/screens/authentication.dart';
 import 'package:travelbuddyapp/screens/login_signup_page.dart';
 
@@ -77,7 +78,7 @@ Widget build(BuildContext context) {
       break;
     case AuthStatus.LOGGED_IN:
       if (_userId.length > 0 && _userId != null) {
-        return new HomePage(
+        return new Packing(
           userId: _userId,
           auth: widget.auth,
           logoutCallback: logoutCallback,
