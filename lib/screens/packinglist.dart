@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'packing-list-options.dart';
 
 void main() => runApp(MaterialApp(home: Packing()));
 
