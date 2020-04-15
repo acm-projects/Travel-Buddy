@@ -34,47 +34,48 @@ class _LoginPageState extends State<LoginPage>{
 
   Widget build(BuildContext context){
     return Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("images/background.jpg"),
-              fit: BoxFit.cover,
+        body: SingleChildScrollView(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("images/background.jpg"),
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
-          padding: EdgeInsets.only(top: 175, right: 50.0, left: 50.0, bottom: 40.0),
-          child: Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                Image.asset('images/tblogo.png'),
-                SizedBox(height: 35.0,),
-                SizedBox(height: 35.0,),
-                new Container(
-                  padding: EdgeInsets.all(5),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white,
-                  ),
-                  child: Column(
-                    children: <Widget>[
-                      buildTextField("Email"),
-                      SizedBox(height: 5.0,),
-                      buildTextField("Password"),
-                    ],),
-                ),
-                Container(
-                  child: Row(
-                      mainAxisAlignment: MainAxisAlignment.end,
+            padding: EdgeInsets.only(top: 175, right: 50.0, left: 50.0, bottom: 40.0),
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset('images/tblogo.png'),
+                  SizedBox(height: 35.0,),
+                  SizedBox(height: 35.0,),
+                  new Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.white,
+                    ),
+                    child: Column(
                       children: <Widget>[
-                        new FlatButton(
-                            onPressed: (){
-                              print("Forgotten Password?");
-                            },
-                            child: Text("Forgotten Password?", style: TextStyle(color: Colors.black)
-                            )
-                        ),
-                      ]
+                        buildTextField("Email"),
+                        SizedBox(height: 5.0,),
+                        buildTextField("Password"),
+                      ],),
                   ),
-                ),
+                  Container(
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          new FlatButton(
+                              onPressed: (){
+                                print("Forgotten Password?");
+                              },
+                              child: Text("Forgotten Password?", style: TextStyle(color: Colors.black)
+                              )
+                          ),
+                        ]
+                    ),
+                  ),
                 buildButtonContainer(),
                 SizedBox(height: 10.0,),
                 Container(
@@ -104,6 +105,7 @@ class _LoginPageState extends State<LoginPage>{
               ]
           ),
         )
+      ),
     );
   }
 
