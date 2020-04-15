@@ -18,9 +18,19 @@ class _LoginPageState extends State<LoginPage> {
   String _password;
   String _errorMessage;
 
+  //bool _hideText = true;
   bool _isLoginForm;
   bool _isLoading;
 
+  /*final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  @override
+
+  void dispose() {
+    emailController.dispose();
+    passwordController.dispose();
+    super.dispose();
+  }*/
   // Check if form is valid before perform login or signup
   bool validateAndSave() {
     final form = _formKey.currentState;
@@ -92,16 +102,269 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Flutter login demo'),
+      body: SingleChildScrollView(
+        child: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("images/background.jpg"),
+              fit: BoxFit.cover,
+            ),
         ),
-        body: Stack(
+            padding: EdgeInsets.only(top: 30, right: 50.0, left: 50.0, bottom: 75.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+            /*Image.asset('images/tblogo.png'),
+            SizedBox(height: 30.0,),*/
+            SizedBox(height: 55.0,),
+            new Container(
+            padding: EdgeInsets.all(5),
+            decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            color: Colors.white,
+            ),
+        child: Stack(
           children: <Widget>[
             _showForm(),
             _showCircularProgress(),
           ],
-        ));
+        ),
+      ),
+    ],),
+      ),
+      ),
+    );
   }
+
+  /*Widget build(BuildContext context){
+    return Scaffold(
+      body: SingleChildScrollView(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("images/background.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            padding: EdgeInsets.only(top: 175, right: 50.0, left: 50.0, bottom: 40.0),
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset('images/tblogo.png'),
+                  SizedBox(height: 35.0,),
+                  SizedBox(height: 35.0,),
+                  new Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      children: <Widget>[
+                        buildTextField("Email"),
+                        SizedBox(height: 5.0,),
+                        buildTextField("Password"),
+                      ],),
+                  ),
+                  Container(
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          new FlatButton(
+                              onPressed: (){
+                                print("Forgotten Password?");
+                              },
+                              child: Text("Forgotten Password?", style: TextStyle(color: Colors.black)
+                              )
+                          ),
+                        ]
+                    ),
+                  ),
+                  buildButtonContainer(),
+                  SizedBox(height: 10.0,),
+                  Container(
+                    child: Center(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          new FlatButton(
+                              onPressed: (){
+                                print("Don't have an account?");
+                              },
+                              child: Text("Don't have an account?", style: TextStyle(color: Colors.black)
+                              )
+                          ),
+                          SizedBox(width: 10.0,),
+                          new FlatButton(
+                              onPressed: (){
+                                print('Sign Up');
+                              },
+                              child: Text("SIGN UP", style: TextStyle(color: Colors.black)
+                              )
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ]
+            ),
+          )
+      ),
+    );
+  }
+
+  void _toggle() {
+    setState(() {
+      _hideText = !_hideText;
+    });
+  }
+
+  Widget buildTextField(String fieldName){
+    return TextField(
+
+      controller: fieldName == "Password" ? passwordController : emailController,
+      obscureText: _hideText && fieldName == "Password" ? true : false,
+      decoration: InputDecoration(
+          labelText: fieldName,
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+          filled: true,
+          focusColor: Colors.white12,
+          prefixIcon: fieldName == "Email" ? Icon(Icons.email): Icon(Icons.lock),
+          suffixIcon: fieldName == "Password" ? IconButton(
+            onPressed: (){
+              _toggle();
+            },
+            icon: Icon(!_hideText ? Icons.visibility : Icons.visibility_off),
+          ): null
+      ),
+    );
+  }
+
+  Widget buildButtonContainer(){
+    return Container(
+      child: new FlatButton(
+        onPressed: () {
+          print("Email: " + emailController.text);
+          print("Password: " + passwordController.text);
+          emailController.clear();
+          passwordController.clear();
+        },
+        child: new Text('LOGIN',
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 14.0,
+          ),
+        ),
+      ),
+      height: 30.0,
+      width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        gradient: LinearGradient(
+            colors: [
+              Color(0xFF0288D1),
+              Color(0xFF01579B)
+            ],
+            begin: Alignment.centerRight,
+            end: Alignment.centerLeft
+        ),
+      ),
+    );
+  }
+}*/
+
+/*
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SingleChildScrollView(
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: AssetImage("images/background.jpg"),
+                fit: BoxFit.cover,
+              ),
+            ),
+            padding: EdgeInsets.only(top: 175, right: 50.0, left: 50.0, bottom: 40.0),
+            child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Image.asset('images/tblogo.png'),
+                  SizedBox(height: 35.0,),
+                  SizedBox(height: 35.0,),
+                  new Container(
+                    padding: EdgeInsets.all(5),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      color: Colors.white,
+                    ),
+                    child: Column(
+                      children: <Widget>[
+                        Text("Email"),
+                        SizedBox(height: 5.0,),
+                        Text("Password"),
+                      ],),
+                  ),
+                  Container(
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: <Widget>[
+                          new FlatButton(
+                              onPressed: (){
+                                print("Forgotten Password?");
+                              },
+                              child: Text("Forgotten Password?", style: TextStyle(color: Colors.black)
+                              )
+                          ),
+                        ]
+                    ),
+                  ),
+                  buildButtonContainer(),
+                  SizedBox(height: 10.0,),
+                  Container(
+                    child: Center(
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          new FlatButton(
+                              onPressed: (){
+                                print("Don't have an account?");
+                              },
+                              child: Text("Don't have an account?", style: TextStyle(color: Colors.black)
+                              )
+                          ),
+                          SizedBox(width: 10.0,),
+                          new FlatButton(
+                              onPressed: (){
+                                print('Sign Up');
+                              },
+                              child: Text("SIGN UP", style: TextStyle(color: Colors.black)
+                              )
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ]
+            ),
+          )
+      ),
+    );
+  }
+
+  void _toggle() {
+    setState(() {
+      _hideText = !_hideText;
+    });
+  }
+*/
+
+
+
 
   Widget _showCircularProgress() {
     if (_isLoading) {
@@ -113,28 +376,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  /*void _showVerifyEmailSentDialog() {
-    showDialog(
-      context: context,
-      builder: (BuildContext context) {
-        // return object of type Dialog
-        return AlertDialog(
-          title: new Text("Verify your account"),
-          content:
-              new Text("Link to verify account has been sent to your email"),
-          actions: <Widget>[
-            new FlatButton(
-              child: new Text("Dismiss"),
-              onPressed: () {
-                toggleFormMode();
-                Navigator.of(context).pop();
-              },
-            ),
-          ],
-        );
-      },
-    );
-  }*/
+
 
   Widget _showForm() {
     return new Container(
@@ -176,7 +418,7 @@ class _LoginPageState extends State<LoginPage> {
     return new Hero(
       tag: 'hero',
       child: Padding(
-        padding: EdgeInsets.fromLTRB(0.0, 70.0, 0.0, 0.0),
+        padding: EdgeInsets.fromLTRB(0.0, 35.0, 0.0, 0.0),
         child: CircleAvatar(
           backgroundColor: Colors.transparent,
           radius: 48.0,
@@ -241,7 +483,7 @@ class _LoginPageState extends State<LoginPage> {
             elevation: 5.0,
             shape: new RoundedRectangleBorder(
                 borderRadius: new BorderRadius.circular(30.0)),
-            color: Colors.blue,
+            color: Colors.cyan[800],
             child: new Text(_isLoginForm ? 'Login' : 'Create account',
                 style: new TextStyle(fontSize: 20.0, color: Colors.white)),
             onPressed: validateAndSubmit,
