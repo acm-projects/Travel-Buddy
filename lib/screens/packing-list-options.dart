@@ -1,3 +1,4 @@
+/*
 
 import 'package:flutter/material.dart';
 
@@ -95,3 +96,5 @@ class PackingListCategoryItem extends StatelessWidget {
     return _buildTiles(entry);
   }
 }
+*/
+
