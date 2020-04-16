@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "686659813089",
+    "firebase_url": "https://travel-buddy-91af1.firebaseio.com",
+    "project_id": "travel-buddy-91af1",
+    "storage_bucket": "travel-buddy-91af1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686659813089:android:753ff48c9984c75499c1a0",
+        "android_client_info": {
+          "package_name": "com.sreya.travelbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686659813089-eqn9fvn4usdq6h446d2k8id82fasv5ef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp9RNUz3fBgRmHGPUVNDMbY0MO0zigo2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686659813089-eqn9fvn4usdq6h446d2k8id82fasv5ef.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686659813089-ef4n3odgnq8e3klppdt77u30o3j8hc3o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sreya.travelbuddyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686659813089:android:2e55ed99ddc4e17899c1a0",
+        "android_client_info": {
+          "package_name": "com.sreya.travelbuddyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686659813089-eqn9fvn4usdq6h446d2k8id82fasv5ef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp9RNUz3fBgRmHGPUVNDMbY0MO0zigo2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686659813089-eqn9fvn4usdq6h446d2k8id82fasv5ef.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686659813089-ef4n3odgnq8e3klppdt77u30o3j8hc3o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sreya.travelbuddyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:686659813089:android:e60dd508b19c601899c1a0",
+        "android_client_info": {
+          "package_name": "com.travelbuddy.realtravelbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "686659813089-eqn9fvn4usdq6h446d2k8id82fasv5ef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBp9RNUz3fBgRmHGPUVNDMbY0MO0zigo2g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "686659813089-eqn9fvn4usdq6h446d2k8id82fasv5ef.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "686659813089-ef4n3odgnq8e3klppdt77u30o3j8hc3o.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sreya.travelbuddyapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

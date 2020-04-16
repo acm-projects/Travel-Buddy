@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:travelbuddyapp/screens/authentication.dart';
+import 'package:travelbuddyapp/screens/root_page.dart';
+
 
 void main() => runApp(TravelBuddyApp());
 
@@ -6,11 +9,12 @@ class TravelBuddyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return MaterialApp(
+        title: 'Travel Buddy',
         debugShowCheckedModeBanner: false,
-        theme: ThemeData(
+        theme: new ThemeData(
           primaryColor: Color(0xFF0288D1),
         ),
-        home: LoginPage()
+        home: new RootPage(auth: new Auth())
     );
   }
 }
@@ -170,3 +174,4 @@ class _LoginPageState extends State<LoginPage>{
     );
   }
 }
+
