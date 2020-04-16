@@ -1,9 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:travelbuddyapp/screens/authentication.dart';
+/*import 'package:firebase_database/firebase_database.dart';
+import 'dart:async';*/
 
 void main() => runApp(MaterialApp(home: Packing()));
 
 // Stateless widget to see live app updates
 class Packing extends StatefulWidget {
+  Packing({Key key, this.auth, this.userId, this.logoutCallback})
+      : super(key: key);
+
+  final BaseAuth auth;
+  final VoidCallback logoutCallback;
+  final String userId;
   /*@override
   Widget build(BuildContext context) {
     return new Scaffold(
