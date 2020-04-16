@@ -17,9 +17,16 @@ environment:
   sdk: ">=2.2.2 <3.0.0"
 
 dependencies:
+  syncfusion_flutter_calendar: ^17.4.40-beta
   flutter:
     sdk: flutter
+    
   #shared_preferences: v0.4.2 # added this to fix multiple dependencies problem?? lol nvm
+
+  http: any
+  table_calendar: ^2.2.3
+  shared_preferences: ^0.5,4+5
+
 
     # Add the dependency for the Firebase Core Flutter SDK
   firebase_core: ^0.4.0+9

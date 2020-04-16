@@ -90,7 +90,6 @@ class MyAppState extends State<Packing> {
         backgroundColor: Colors.blueGrey[600],
       ),
       body: new Container(
-          padding: new EdgeInsets.all(32.0),
           child: new Center(
               child: new Column(children: <Widget>[
             Container(
@@ -119,29 +118,29 @@ class MyAppState extends State<Packing> {
             ),
             new CheckboxListTile(
                 title: new Text(
-                    'Shampoo',
-                style: TextStyle(
-                 fontFamily: 'PlayfairDisplay'
-                ),),
+                  'Shampoo',
+                  style: TextStyle(fontFamily: 'PlayfairDisplay'),
+                ),
+                activeColor: Colors.blueGrey[800],
+                value: _isChecked,
+                onChanged: (bool value1) {
+                  onChanged(value1);
+                }),
+            new CheckboxListTile(
+                title: new Text(
+                  'Conditioner',
+                  style: TextStyle(fontFamily: 'PlayfairDisplay'),
+                ),
                 activeColor: Colors.blueGrey[800],
                 value: _isChecked,
                 onChanged: (bool value) {
                   onChanged(value);
-                }),
-                new CheckboxListTile(
-                    title: new Text('Conditioner',
-                      style: TextStyle(
-                          fontFamily: 'PlayfairDisplay'
-                      ),),
-                    activeColor: Colors.blueGrey[800],
-                    value: _isChecked,
-                    onChanged: (bool value) {
-                      onChanged(value);
-                    })
+                })
           ]))),
       floatingActionButton: IconButton(
         onPressed: () {
-          print('Add a new packing list.');
+         // print('Add a new packing list.');
+          Navigator.push(context, MaterialPageRoute(builder: (context) => NewPackingListView()));
         },
         icon: Icon(Icons.add_circle),
         color: Colors.blueGrey[800],
