@@ -64,10 +64,10 @@ class _ListPageState extends State<ListPage> {
           ),
           trailing:
               Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
-/*                  onTap: () {
+                  onTap: () {
             Navigator.push(
-                context, MaterialPageRoute(builder: (context) => Checklist()));
-          },*/
+                context, MaterialPageRoute(builder: (context) => DynamicallyAddCheckbox()));
+          },
         );
 
 
