@@ -9,7 +9,7 @@ class CarryOn extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Color.fromRGBO(57, 66, 86, 1.0),
+        primaryColor: Color.fromRGBO(8, 66, 86, 1.0),
       ),
       home: CheckBoxInListview(),
     );
@@ -41,7 +41,7 @@ class _CheckBoxInListviewState extends State<CheckBoxInListview> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Tolietries",
+          "Carry On",
           style: TextStyle(
             fontSize: 20.0,
           ),

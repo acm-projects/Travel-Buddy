@@ -9,7 +9,7 @@ class Toiletries extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Color.fromRGBO(57, 66, 86, 1.0),
+        primaryColor: Color.fromRGBO(8, 66, 86, 1.0),
       ),
       home: CheckBoxInListview(),
     );

@@ -13,7 +13,6 @@ class PackingList extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new MaterialApp(
-      title: 'Demo',
       theme: new ThemeData(primaryColor: Color.fromRGBO(57, 66, 86, 1.0)),
       home: new ListPage(title: 'Packing Lists'),
     );
