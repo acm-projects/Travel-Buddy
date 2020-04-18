@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Infant());
+void main() => runApp(Cruise());
 
-class Infant extends StatelessWidget {
+class Cruise extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -25,14 +25,14 @@ class CheckBoxInListview extends StatefulWidget {
 class _CheckBoxInListviewState extends State<CheckBoxInListview> {
   bool _isChecked = false;
 
-  List<String> _texts = ["Baby Wipes", "Formula", "Diapers", "Wet Wipes", "Bottles", "Pacifiers"];
+  List<String> _texts = ["Sunscreen" , "Motion Sickness medication", "Waterproof phone case", "Hanging toiletry storage"];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Infant",
+          "Cruise",
           style: TextStyle(
             fontSize: 20.0,
           ),

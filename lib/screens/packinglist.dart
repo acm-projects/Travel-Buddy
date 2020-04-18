@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:travelbuddyapp/screens/cruise.dart';
 import 'package:travelbuddyapp/screens/infant.dart';
 import 'carry-on.dart';
+import 'first-aid.dart';
 import 'toiletries.dart';
 /*import 'package:travelbuddyapp/screens/authentication.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -22,7 +24,6 @@ class PackingList extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new MaterialApp(
-      title: 'Demo',
       theme: new ThemeData(primaryColor: Color.fromRGBO(57, 66, 86, 1.0)),
       home: new ListPage(title: 'Packing Lists'),
     );
@@ -95,7 +96,7 @@ class _ListPageState extends State<ListPage> {
             }
             if (packingListTiles.title == "First Aid") {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+                  context, MaterialPageRoute(builder: (context) => FirstAid()));
             }
             if (packingListTiles.title == "Infant") {
               Navigator.push(
@@ -103,11 +104,7 @@ class _ListPageState extends State<ListPage> {
             }
             if (packingListTiles.title == "Cruise") {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Toiletries()));
-            }
-            if (packingListTiles.title == "Technology") {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+                  context, MaterialPageRoute(builder: (context) => Cruise()));
             }
             if (packingListTiles.title == "Other") {
               Navigator.push(

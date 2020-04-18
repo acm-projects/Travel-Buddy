@@ -67,14 +67,15 @@ class _CurrencyConverterState extends State<CurrencyConverter> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Currency Converter"),
+        backgroundColor: Color.fromRGBO(8, 66, 86, 1.0),
       ),
       body: currencies == null
           ? Center(child: CircularProgressIndicator())
           : Container(
         height: MediaQuery.of(context).size.height / 2,
         width: MediaQuery.of(context).size.width,
-        child: Padding(
-          padding: const EdgeInsets.all(8.0),
+        child: Center(
+       //   padding: const EdgeInsets.all(8.0),
           child: Card(
             elevation: 3.0,
             child: Column(
