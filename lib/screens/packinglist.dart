@@ -3,10 +3,21 @@ import 'package:flutter/rendering.dart';
 import 'package:travelbuddyapp/screens/infant.dart';
 import 'carry-on.dart';
 import 'toiletries.dart';
+/*import 'package:travelbuddyapp/screens/authentication.dart';
+import 'package:firebase_database/firebase_database.dart';
+import 'dart:async';*/
 
 void main() => runApp(new PackingList());
 
 class PackingList extends StatelessWidget {
+
+ /*PackingList({Key key, this.auth, this.userId, this.logoutCallback})
+      : super(key: key);
+
+  final BaseAuth auth;
+  final VoidCallback logoutCallback;
+  final String userId;*/
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -30,6 +41,12 @@ class ListPage extends StatefulWidget {
 class _ListPageState extends State<ListPage> {
   List packingListTiles;
 
+  /*final FirebaseDatabase _database = FirebaseDatabase.instance;
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  // finished fixing here
+  Query _packingQuery;
+*/
   @override
   void initState() {
     // TODO: implement initState

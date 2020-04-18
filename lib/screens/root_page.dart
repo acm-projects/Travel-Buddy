@@ -79,11 +79,11 @@ Widget build(BuildContext context) {
     case AuthStatus.LOGGED_IN:
       if (_userId.length > 0 && _userId != null) {
         // Code not compatible with packinglist.dart - NR
-        /*return new Packing(
-          userId: _userId,
+        return new ListPage(
+          title: 'Packing Lists');
+          /*userId: _userId,
           auth: widget.auth,
-          logoutCallback: logoutCallback,
-        );*/
+          logoutCallback: logoutCallback,*/
       } else
         return buildWaitingScreen();
       break;
