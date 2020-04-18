@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:travelbuddyapp/screens/cruise.dart';
 import 'package:travelbuddyapp/screens/infant.dart';
 import 'carry-on.dart';
+import 'first-aid.dart';
 import 'toiletries.dart';
 
 void main() => runApp(new PackingList());
@@ -78,7 +80,7 @@ class _ListPageState extends State<ListPage> {
             }
             if (packingListTiles.title == "First Aid") {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+                  context, MaterialPageRoute(builder: (context) => FirstAid()));
             }
             if (packingListTiles.title == "Infant") {
               Navigator.push(
@@ -86,11 +88,7 @@ class _ListPageState extends State<ListPage> {
             }
             if (packingListTiles.title == "Cruise") {
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Toiletries()));
-            }
-            if (packingListTiles.title == "Technology") {
-              Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+                  context, MaterialPageRoute(builder: (context) => Cruise()));
             }
             if (packingListTiles.title == "Other") {
               Navigator.push(
