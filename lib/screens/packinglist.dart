@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'checklist-page.dart';
+import 'package:travelbuddyapp/screens/infant.dart';
+import 'carry-on.dart';
+import 'toiletries.dart';
+
 void main() => runApp(new PackingList());
 
 class PackingList extends StatelessWidget {
@@ -64,12 +67,37 @@ class _ListPageState extends State<ListPage> {
           ),
           trailing:
               Icon(Icons.keyboard_arrow_right, color: Colors.white, size: 30.0),
-                  onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (context) => DynamicallyAddCheckbox()));
+          onTap: () {
+            if (packingListTiles.title == "Tolietries") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+            }
+            if (packingListTiles.title == "Carry-On") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => CarryOn()));
+            }
+            if (packingListTiles.title == "First Aid") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+            }
+            if (packingListTiles.title == "Infant") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Infant()));
+            }
+            if (packingListTiles.title == "Cruise") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+            }
+            if (packingListTiles.title == "Technology") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+            }
+            if (packingListTiles.title == "Other") {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => Toiletries()));
+            }
           },
         );
-
 
     Card makeCard(PackingListTiles packingListTiles) => Card(
           elevation: 8.0,
@@ -103,6 +131,7 @@ class _ListPageState extends State<ListPage> {
 
 class PackingListTiles {
   String title;
+
   PackingListTiles({this.title});
 }
 
@@ -115,6 +144,5 @@ List getPackingListTiles() {
     PackingListTiles(title: "Cruise"),
     PackingListTiles(title: "Technology"),
     PackingListTiles(title: "Other"),
-
   ];
 }
