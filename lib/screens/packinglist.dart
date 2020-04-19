@@ -31,7 +31,7 @@ class PackingList extends StatelessWidget {
 }
 
 class ListPage extends StatefulWidget {
-  ListPage({Key key, this.titlegit push origin ma}) : super(key: key);
+  ListPage({Key key, this.title}) : super(key: key);
 
   final String title;
 
